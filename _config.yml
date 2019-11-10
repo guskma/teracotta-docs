@@ -12,22 +12,9 @@ link:
   theme: color # 链接样式，color: 彩色图标  white: 黑白图标
   items:
     rss: /atom.xml
-    github: https://github.com/yelog
-    facebook: https://www.facebook.com/faker.tops
-    twitter:
-    linkedin:
-    instagram: https://www.facebook.com/faker.tops
-    reddit: https://www.reddit.com/user/yelog/
-    weibo: http://weibo.com/u/2307534817
-    jianshu: https://www.jianshu.com/u/ff56736de7cf
-    zhihu: https://www.zhihu.com/people/jaytp/activities
-    csdn:
-    oschina: https://my.oschina.net/yelog
-    juejin:
-    email: jaytp@qq.com
-    qq: 872336115
-    kugou: https://www.kugou.com/
-    neteasemusic: https://music.163.com/#/user/home?id=88151013
+    github: https://github.com/guskma/teracotta
+#   twitter:
+    email: guskma@drdr.work
 
 ##########多作者模式############
 author:
@@ -42,14 +29,11 @@ category:
   num: true # 分类显示文章数
   sub: true # 开启多级分类
   width:
-    lg: 120 # 1468px<屏幕宽度 左侧分类宽度
-    md: 100 # 1024px<屏幕宽度<=1468px 左侧分类宽度
-    sm: 100 # 426px<屏幕宽度<=1024px 左侧分类宽度（ipad）
+    lg: 180 # 1468px<屏幕宽度 左侧分类宽度
+    md: 150 # 1024px<屏幕宽度<=1468px 左侧分类宽度
+    sm: 150 # 426px<屏幕宽度<=1024px 左侧分类宽度（ipad）
 # 多级分类说明：
 # 比如在文章中设置多个菜单，则默认为多级菜单，即：工具>hexo
-# categories:
-#   - 工具
-#   - hexo
 
 # 左下角自定义菜单
 menu:
@@ -58,7 +42,7 @@ menu:
     url: /about  # 跳转链接
     type: 1 # 跳转类型 1：站内异步跳转 2：当前页面跳转 3：打开新的tab页
   friend: # '友链' 按钮
-    on: true # 是否展示
+    on: false # 是否展示
   menus: # 添加的其他菜单写在 menus 下，如下三个菜单：动态菜单1、动态菜单2、动态菜单3
     相册:
       on: false
@@ -74,16 +58,16 @@ menu:
       type: 3  # 跳转类型 3：打开新的tab页
 
 # 文末声明
-article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com
+article_txt: 当ページはCC(BY)を適用しています。クレジットを改変しない限り、ご自由にお使いいただけます。
 
-bottom_text: ©2016-2019 Yelog
+bottom_text: 'since 2019 guskma'
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
-reward: true
+reward: false
 # true 开启打赏功能
 
-searchAll: false
+searchAll: true
 # true 启用全文搜索
 # 开启此功能需要下面操作：
 # 1. 在 hexo 根目录 执行 npm install hexo-generator-search --save 安装插件
@@ -93,7 +77,7 @@ searchAll: false
 #   field: post
 
 
-copyright: true
+copyright: false
 # Copyright info. of post | 文末版权信息
 
 word_count: false
@@ -104,7 +88,7 @@ word_count: false
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
-  on: true
+  on: false
   site_visit: true
   page_visit: true
 
@@ -187,7 +171,7 @@ highlight:
 
 # MathJax 数学公式支持
 mathjax:
-  on: true #是否启用
+  on: false #是否启用
   per_page: false # 若只渲染单个页面，此选项设为false，页面内加入 mathjax: true
 
 ##############################
@@ -218,13 +202,13 @@ gentie:
   # 网易云跟帖暂时不支持查询评论数，所以启用时，把评论数关掉，上方comment_count: false。
 
 gitalk:
-  githubID: yelog
-  repo: yelog.github.io
+  githubID: guskma
+  repo: guskma.github.io
   ClientID:
   ClientSecret:
-  adminUser: yelog
+  adminUser: guskma
   distractionFreeMode: true
-  language: zh-CN
+  language: ja-JP
   perPage: 10
 # gitalk：利用github issue制作的第三方聊天插件
 # https://github.com/gitalk/gitalk
@@ -239,8 +223,8 @@ gitalk:
 
 
 gitment:
-  owner: yelog
-  repo: yelog.github.io
+  owner: guskma
+  repo: guskma.github.io
   client_id:
   client_secret:
   # gitment : 通过github issue实现的评论系统
